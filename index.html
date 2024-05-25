@@ -17,36 +17,36 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <section id="Home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Hi, I am</h3>
                 <h1 class="fw-bold">Muhammad Faisal</h1>
                 <p>I am a Web Developer based in Indonesia.</p>
                 <a class="btn" href="images/my profil.jpg" download>Resume</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <img class="profil-img" src="images/my profil.jpg" alt="">
             </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column">
-            <a class="text-decoration-none text-dark" href="#about">More Info</a>
-            <img id="arrow" src="images/arrow.svg" alt="arrow">
-        </div>
+          <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+             <div class="text-dark">More Info</div>
+             <img id="arrow"  class="mt-2" src="images/arrow.svg" alt="arrow">
+          </a>
       </section>
       <section id="about" class="about container">
         <p>Saya Muhammad faisal seorang Web developer junior.
@@ -102,20 +102,20 @@
       </section>
       <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <p>Jika anda memiliki projek yang diinginkan, Saya dapat menyelesaikan masalah yang anda miliki. Baik itu pembuatan Website, design, dll. Anda dapat menghubungi saya melalui kontak saya yang telah tertera dibawah.</p>
             <div class="row">
               <div class="col d-flex align-items-center">
-                <img src="images/facebook.svg" alt="facebook-icon">
-                <p>Muhammad Faisal</p>
+                <img class="w-25" src="images/facebook.svg" alt="facebook-icon">
+                <p class="mb-0 ms-2">Muhammad Faisal</p>
               </div>
               <div class="col d-flex align-items-center">
-                <img src="images/instagram.svg" alt="instagram-icon">
-                <p>@mfaiisaal_</p>
+                <img class="w-25" src="images/instagram.svg" alt="instagram-icon">
+                <p class="mb-0 ms-2">@mfaiisaal_</p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <form class="contact-form" onsubmit="onFormSubmit(event)">
               <div class="mb-3">
                 <label for="inp_email" class="form-label">Email address</label>

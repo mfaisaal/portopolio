@@ -43,11 +43,13 @@ section::before{
 .navbar{
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
 }
 
 .profil-img{
     background-image: none;
     border-radius: 50%;
+    width: 100%;
 }
 .home h1{
     font-size: 72px;
@@ -58,12 +60,9 @@ section::before{
 }
 
 .home .arrow img{
-    width: 30px;
+    width: 60px;
 }
 
-.arrow{
-    margin-top: 100px;
-}
 
 #arrow{
     animation: 1s upDown infinite;
@@ -71,16 +70,9 @@ section::before{
 
 .about::before{
     content: 'About';
-    margin-top: 20px;
 }
 
-#about p{
-    margin-bottom: 40px;
-}
 
-.about-exp-item{
-    margin-top: 0px;
-}
 
 .about-exp-item-header{
     display: flex;
@@ -167,6 +159,12 @@ section::before{
 
 .form-label {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
 }
 
 @keyframes upDown {
